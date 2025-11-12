@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Náš tým - LTA Partners</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">LTA</span>
+                        <span class="logo-subtitle">Legal Tax Audit</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Domů</a>
+                    <a href="services.html" class="nav-link">Služby</a>
+                    <a href="team.html" class="nav-link active">Tým</a>
+                    <a href="about.html" class="nav-link">O nás</a>
+                    <a href="career.html" class="nav-link">Kariéra</a>
+                    <a href="news.html" class="nav-link">Novinky</a>
+                    <a href="contact.html" class="nav-link nav-link-cta">Kontakt</a>
+
+                    <div class="language-switcher">
+                        <button class="lang-btn active">CS</button>
+                        <button class="lang-btn">EN</button>
+                        <button class="lang-btn">DE</button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Náš tým</h1>
+            <p class="page-subtitle">
+                Přes 50 zkušených specialistů v oblasti práva, daní, auditu a účetnictví
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Filter Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-filters">
+                <button class="filter-btn active" data-filter="all">Všichni (50+)</button>
+                <button class="filter-btn" data-filter="law">Právo (15)</button>
+                <button class="filter-btn" data-filter="tax">Daně (12)</button>
+                <button class="filter-btn" data-filter="audit">Audit (8)</button>
+                <button class="filter-btn" data-filter="accounting">Účetnictví (10)</button>
+                <button class="filter-btn" data-filter="management">Management (5)</button>
+            </div>
+
+            <div class="team-search">
+                <input type="text" id="teamSearch" placeholder="Hledat podle jména nebo specializace..." class="search-input">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+            </div>
+
+            <!-- Partners Section -->
+            <div class="team-category">
+                <h2 class="category-title">Partneři</h2>
+                <div class="team-grid">
+                    <!-- Partner 1 -->
+                    <div class="team-card" data-category="law" data-keywords="právník advokát partner obchodní právo fúze akvizice">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">MB</div>
+                            <div class="team-badge partner-badge">Partner</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Martin Brázdil</h3>
+                            <p class="team-position">Advokát, Partner</p>
+                            <div class="team-tags">
+                                <span class="tag">Právo</span>
+                                <span class="tag">M&A</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Obchodní a společenské právo</li>
+                                    <li>Fúze a akvizice</li>
+                                    <li>Corporate compliance</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina, Němčina
+                            </div>
+                            <a href="mailto:martin.brazdil@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="team-card" data-category="tax" data-keywords="daňový poradce partner dph daň z příjmů">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">RK</div>
+                            <div class="team-badge partner-badge">Partner</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Robert Koleňák</h3>
+                            <p class="team-position">Daňový poradce, Partner</p>
+                            <div class="team-tags">
+                                <span class="tag">Daně</span>
+                                <span class="tag">DPH</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Daň z přidané hodnoty</li>
+                                    <li>Daň z příjmů právnických osob</li>
+                                    <li>Zastupování v daňových sporech</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Slovenština, Angličtina
+                            </div>
+                            <a href="mailto:robert.kolenak@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Partner 3 -->
+                    <div class="team-card" data-category="accounting" data-keywords="účetní partner vedoucí účetního oddělení">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">PP</div>
+                            <div class="team-badge partner-badge">Partner</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Petr Píša</h3>
+                            <p class="team-position">Vedoucí účetního oddělení, Partner</p>
+                            <div class="team-tags">
+                                <span class="tag">Účetnictví</span>
+                                <span class="tag">IFRS</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Účetní metody a postupy</li>
+                                    <li>České účetnictví a SAP reporting</li>
+                                    <li>IFRS reporting</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:petr.pisa@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Team Section -->
+            <div class="team-category">
+                <h2 class="category-title">Seniorní tým</h2>
+                <div class="team-grid">
+                    <!-- Senior 1 -->
+                    <div class="team-card" data-category="law" data-keywords="advokát seniorní nemovitosti stavební právo">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">ZR</div>
+                            <div class="team-badge">Of Counsel</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Zdeněk Rosický</h3>
+                            <p class="team-position">Advokát, Of Counsel</p>
+                            <div class="team-tags">
+                                <span class="tag">Právo</span>
+                                <span class="tag">Nemovitosti</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Nemovitosti a stavební právo</li>
+                                    <li>Obchodní právo</li>
+                                    <li>Smluvní právo</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:zdenek.rosicky@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Senior 2 -->
+                    <div class="team-card" data-category="law" data-keywords="advokát senior obchodní právo">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">VB</div>
+                            <div class="team-badge">Senior Associate</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Václav Berger</h3>
+                            <p class="team-position">Advokát, Senior Associate</p>
+                            <div class="team-tags">
+                                <span class="tag">Právo</span>
+                                <span class="tag">Obchodní</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Obchodní a společenské právo</li>
+                                    <li>Smluvní právo</li>
+                                    <li>Pracovní právo</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:vaclav.berger@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Senior 3 -->
+                    <div class="team-card" data-category="audit" data-keywords="auditor statutární audit">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">MG</div>
+                            <div class="team-badge">Auditor</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Michal Gabriel</h3>
+                            <p class="team-position">Auditor</p>
+                            <div class="team-tags">
+                                <span class="tag">Audit</span>
+                                <span class="tag">IFRS</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Statutární audit</li>
+                                    <li>Audit dle IFRS</li>
+                                    <li>Due diligence</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:michal.gabriel@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Senior 4 -->
+                    <div class="team-card" data-category="law" data-keywords="advokát gdpr ochrana osobních údajů">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">SM</div>
+                            <div class="team-badge">Attorney</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Soňa Macurová</h3>
+                            <p class="team-position">Advokátka</p>
+                            <div class="team-tags">
+                                <span class="tag">Právo</span>
+                                <span class="tag">GDPR</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Obchodní a společenské právo</li>
+                                    <li>Corporate compliance a GDPR</li>
+                                    <li>Nemovitostní právo</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:sona.macurova@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Senior 5 -->
+                    <div class="team-card" data-category="tax" data-keywords="daňový poradce asistent">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">KP</div>
+                            <div class="team-badge">Tax Advisor</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Kateřina Poláková</h3>
+                            <p class="team-position">Asistentka daňového poradce</p>
+                            <div class="team-tags">
+                                <span class="tag">Daně</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Daňové poradenství</li>
+                                    <li>Příprava daňových přiznání</li>
+                                    <li>DPH</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:katerina.polakova@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Senior 6 -->
+                    <div class="team-card" data-category="tax" data-keywords="daňový poradce účetní">
+                        <div class="team-photo">
+                            <div class="photo-placeholder">PB</div>
+                            <div class="team-badge">Tax Advisor</div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Petr Benda</h3>
+                            <p class="team-position">Daňový poradce</p>
+                            <div class="team-tags">
+                                <span class="tag">Daně</span>
+                                <span class="tag">Účetnictví</span>
+                            </div>
+                            <div class="team-specialization">
+                                <p><strong>Specializace:</strong></p>
+                                <ul>
+                                    <li>Daňové poradenství</li>
+                                    <li>Účetní služby</li>
+                                    <li>Mzdová agenda</li>
+                                </ul>
+                            </div>
+                            <div class="team-languages">
+                                <strong>Jazyky:</strong> Čeština, Angličtina
+                            </div>
+                            <a href="mailto:petr.benda@LTApartners.com" class="team-contact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Kontaktovat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-cta">
+                <p>Hledáte konkrétního specialistu nebo potřebujete poradit?</p>
+                <a href="contact.html" class="btn btn-primary">Kontaktujte nás</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">LTA</span>
+                        <span class="logo-subtitle">Legal Tax Audit</span>
+                    </div>
+                    <p class="footer-text">
+                        Komplexní právní, daňové a auditorské poradenství pro české i zahraniční klienty.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Služby</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#legal">Právní poradenství</a></li>
+                        <li><a href="services.html#tax">Daňové poradenství</a></li>
+                        <li><a href="services.html#audit">Audit</a></li>
+                        <li><a href="services.html#accounting">Účetnictví</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Společnost</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">O nás</a></li>
+                        <li><a href="team.html">Náš tým</a></li>
+                        <li><a href="career.html">Kariéra</a></li>
+                        <li><a href="news.html">Novinky</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>Lazarská 13/8<br>120 00 Praha 2</li>
+                        <li>+420 246 089 010</li>
+                        <li>LTA@LTApartners.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 LTA Partners. Všechna práva vyhrazena.</p>
+                </div>
+                <div class="footer-mgi">
+                    <p>Členové <strong>MGI Worldwide</strong> a <strong>The Law Firm Network</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
