@@ -14,6 +14,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Parallax Effect for Hero Image
+const heroImage = document.querySelector('.hero-image');
+if (heroImage) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallax = scrolled * 0.5;
+        heroImage.style.transform = `translateY(${parallax}px)`;
+    });
+}
+
 // Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navMenu = document.getElementById('navMenu');
