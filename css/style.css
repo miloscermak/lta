@@ -1202,6 +1202,224 @@ section {
 }
 
 /* ================================
+   SERVICES DETAIL PAGE
+   ================================ */
+
+.services-detail-section {
+    background: white;
+    padding: var(--section-padding);
+}
+
+.service-detail {
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.service-detail:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-detail-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.service-detail-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.service-detail-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.service-detail-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.service-detail-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-detail-item {
+    padding: 2rem;
+    background: var(--bg-gray-50);
+    border-radius: 1rem;
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.service-detail-item:hover {
+    background: white;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(4px);
+}
+
+.service-detail-item h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.service-detail-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ================================
+   COMING SOON PAGE
+   ================================ */
+
+.coming-soon-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-gray-50);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.coming-soon-content {
+    max-width: 600px;
+}
+
+.coming-soon-icon {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.coming-soon-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.coming-soon-text {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+/* ================================
+   CONTACT PAGE
+   ================================ */
+
+.contact-section {
+    background: white;
+    padding: var(--section-padding);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-info-card {
+    padding: 2rem;
+    background: var(--bg-gray-50);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-info-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.contact-info-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-info-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ================================
    RESPONSIVE
    ================================ */
 
@@ -1315,5 +1533,18 @@ section {
 
     .filter-btn {
         width: 100%;
+    }
+}
+
+/* Additional responsive rules for new pages */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-detail-header {
+        flex-direction: column;
+    }
+    .service-detail-grid {
+        grid-template-columns: 1fr;
     }
 }

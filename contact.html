@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - LTA Partners</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://www.ltapartners.com/wp-content/uploads/2024/01/logo_lta_2024.png" alt="LTA Partners" class="logo-image">
+                    </a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Domů</a>
+                    <a href="services.html" class="nav-link">Služby</a>
+                    <a href="team.html" class="nav-link">Tým</a>
+                    <a href="about.html" class="nav-link">O nás</a>
+                    <a href="career.html" class="nav-link">Kariéra</a>
+                    <a href="news.html" class="nav-link">Novinky</a>
+                    <a href="contact.html" class="nav-link nav-link-cta active">Kontakt</a>
+                    <div class="language-switcher">
+                        <button class="lang-btn active">CS</button>
+                        <button class="lang-btn">EN</button>
+                        <button class="lang-btn">DE</button>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Kontaktujte nás</h1>
+            <p class="page-subtitle">Rádi zodpovíme vaše dotazy a domluvíme si nezávaznou konzultaci</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Kontaktní informace</h2>
+                    
+                    <div class="contact-info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Adresa
+                        </h3>
+                        <p>
+                            <strong>LTA Partners</strong><br>
+                            Lazarská 13/8<br>
+                            120 00 Praha 2<br>
+                            Česká republika
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            Telefon
+                        </h3>
+                        <p>
+                            <a href="tel:+420246089010">+420 246 089 010</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            E-mail
+                        </h3>
+                        <p>
+                            <a href="mailto:LTA@LTApartners.com">LTA@LTApartners.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            Úřední hodiny
+                        </h3>
+                        <p>
+                            Pondělí - Pátek: 9:00 - 17:00<br>
+                            Sobota - Neděle: Zavřeno<br>
+                            <em style="color: var(--text-light); font-size: 0.9rem;">Schůzky možné i mimo úřední hodiny po domluvě</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Napište nám</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Jméno a příjmení *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Předmět</label>
+                            <select id="subject" name="subject">
+                                <option value="">Vyberte předmět dotazu</option>
+                                <option value="legal">Právní poradenství</option>
+                                <option value="tax">Daňové poradenství</option>
+                                <option value="audit">Audit</option>
+                                <option value="accounting">Účetní služby</option>
+                                <option value="other">Jiné</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Zpráva *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            Odeslat zprávu
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h2 style="margin-bottom: 2rem;">Kde nás najdete</h2>
+                <div style="width: 100%; height: 400px; background: var(--bg-gray-100); border-radius: 1rem; display: flex; align-items: center; justify-content: center;">
+                    <p style="color: var(--text-secondary);">📍 Lazarská 13/8, Praha 2 - mapa se připravuje</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">LTA</span>
+                        <span class="logo-subtitle">Legal Tax Audit</span>
+                    </div>
+                    <p class="footer-text">Komplexní právní, daňové a auditorské poradenství pro české i zahraniční klienty.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Služby</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#legal">Právní poradenství</a></li>
+                        <li><a href="services.html#tax">Daňové poradenství</a></li>
+                        <li><a href="services.html#audit">Audit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Společnost</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">O nás</a></li>
+                        <li><a href="team.html">Náš tým</a></li>
+                        <li><a href="career.html">Kariéra</a></li>
+                        <li><a href="news.html">Novinky</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>Lazarská 13/8<br>120 00 Praha 2</li>
+                        <li>+420 246 089 010</li>
+                        <li>LTA@LTApartners.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 LTA Partners. Všechna práva vyhrazena.</p>
+                </div>
+                <div class="footer-mgi">
+                    <p>Členové <strong>MGI Worldwide</strong> a <strong>The Law Firm Network</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
