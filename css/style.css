@@ -3,12 +3,12 @@
    ================================ */
 
 :root {
-    /* Colors */
-    --primary-color: #1a56db;
-    --primary-dark: #0f3d9e;
-    --primary-light: #3b82f6;
-    --secondary-color: #0d9488;
-    --secondary-dark: #0f766e;
+    /* Colors - LTA Brand Green */
+    --primary-color: #059669;
+    --primary-dark: #047857;
+    --primary-light: #10b981;
+    --secondary-color: #065f46;
+    --secondary-dark: #064e3b;
 
     --text-primary: #111827;
     --text-secondary: #6b7280;
@@ -88,7 +88,7 @@ button {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #fbbf24 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -97,7 +97,7 @@ button {
 
 /* Override gradient text in hero for better visibility */
 .hero .gradient-text {
-    background: linear-gradient(135deg, #fbbf24 0%, #fde047 100%);
+    background: linear-gradient(135deg, #fbbf24 0%, #34d399 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -133,7 +133,17 @@ button {
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.logo a:hover .logo-image {
+    opacity: 0.8;
 }
 
 .logo-text {
@@ -276,8 +286,8 @@ button {
     bottom: 0;
     background: linear-gradient(
         135deg,
-        rgba(26, 86, 219, 0.6) 0%,
-        rgba(13, 148, 136, 0.5) 100%
+        rgba(5, 150, 105, 0.65) 0%,
+        rgba(6, 95, 70, 0.55) 100%
     );
     mix-blend-mode: multiply;
 }
